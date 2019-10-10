@@ -1,31 +1,32 @@
-let title = document.getElementById('title')
-let displayToDo = document.getElementById('displayToDo')
-title.textContent = "DOM Manipulation";
+const submitBtn = document.getElementById('submit')
+let displayToDo = document.getElementById('Unit name')
+let unitDetails = document.getElementById('unit details')
+const xhr = new XMLHttpRequest()
+var unit;
 
-let tableRowE = document.querySelectorAll('.table-row:nth-child(even)');
-let tableRowO = document.querySelectorAll('.table-row:nth-child(odd)');
-
-tableRowE.forEach(r => {
-    r.style.color = "Black"
-    r.style.backgroundColor = "White"
-})
-tableRowO.forEach(r => {
-    r.style.color = "White"
-    r.style.backgroundColor = "Black"
-})
-function submitButton(){
-    const jeromeValue = document.getElementById('jerome').value
-    document.getElementById("comments").innerHTML = `<b>Comment:<b/> ${jeromeValue}`
-    let timeSubmitted = document.getElementById("dateTime").innerHTML =  `<b>Time submitted:<b/> ${document.lastModified}`
-    let postButtonId = document.getElementById("postButtonsId").innerHTML = `<b>What is the post buttons id:<b/> ${document.getElementById("Submit").id}`
+function buttonClick() {
+    xhr.open('GET', 'units.json',true)
+    xhr.onload = () => {
+        if(xhr.status === 200) {
+            unit = JSON.parse(xhr.responseText)
+            for(var key in unit) {
+                Li = document.createElement('li')                
+                Li.append(document.createTextNode(unit[key].name))
+                displayToDo.append(Li)
+                Li.addEventListener('click', print)  
+            }
+        }       
+    }
+    xhr.send();
 }
 
-function addToDo(e){e.preventDefault()
-    Li = document.createElement('li')
-    Li.append(document.createTextNode(document.getElementById('toDoInput').value))
-    displayToDo.append(Li)   
-
+function print() {
+    document.getElementById('name').innerHTML = unit[this.innerHTML].name
+    document.getElementById('cost').innerHTML = unit[this.innerHTML].cost
+    document.getElementById('unitDescription').innerHTML = unit[this.innerHTML].unitDescription
+    document.getElementById('flavorText').innerHTML = unit[this.innerHTML].flavorText
+    document.getElementById('imageLink').src = unit[this.innerHTML].imageLink
 }
-document.getElementById('toDoSender').addEventListener('submit',addToDo)
-document.getElementById('Submit').addEventListener('click', submitButton);
 
+document.addEventListener('DOMContentLoaded', buttonClick)
+//submitBtn.addEventListener('click', buttonClick)
