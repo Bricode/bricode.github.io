@@ -36,7 +36,7 @@
         "cost":"$129",
         "unitDescription":"This unit contains one Valkyrie equipped with a multi-laser and hellstrike missiles",
         "flavorText":"The Valkyrie Assault Carrier is a twin-engine attack craft used for aerial insertions and drop missions. Screaming across a battlefield, a Valkyrie aircraft deploys its cargo into the fray, providing a deadly torrent of covering fire as the troopers within disembark"
-        ,"imageLink": "../assets/img/Valkyrie.jpg",
+        ,"imageLink": "../assets/img/valkyrie.jpg",
         "starRating": "2"
     }
 }
