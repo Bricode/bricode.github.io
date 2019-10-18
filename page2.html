@@ -1,23 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- the html elements for the banner -->
+    <header></header>
+    <h1 id="headline">Astra Militarum Units</h1>
+    <!-- the html for the dropdown menu -->
     <nav>
-        <div class="dropdown">
-             <button class="dropbtn">Menu</button>
-                <div class="dropdown-content">
-                    <a href="index.html">Home</a>
-                    <a href="page2.html">page 2</a>
-                    <a href="page3.html">page 3</a>
-                    <a href="contact.html">Contact Us</a>
-                </div>
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="page2.html">Astra Militarum Units</a>
+          <a href="page3.html">Space Marine Units</a>
+          <a href="contact.html">Contact Us</a>
         </div>
+      </div>
     </nav>
-</body>
+    <br />
+    <p>
+      The Astra Militarum, also known as the Imperial Guard in colloquial Low
+      Gothic, is the largest coherent fighting force in the galaxy. They serve
+      as the Imperium of Man's primary combat force and first line of defence
+      from the myriad threats which threaten the existence of the human race in
+      the late 41st Millennium. It is comprised of countless billions of men and
+      women -- hundreds of thousands of different regiments, supported by a vast
+      array of light and heavy armoured vehicles that provide the Guard's
+      primary offensive punch. The Astra Militarum are usually the first
+      Imperial force to respond to a threat if a world's Planetary Defence Force
+      (PDF) fails to suppress it. They also garrison major locations of
+      strategic or cultural interest to the Imperium and are often found in
+      defensive roles. Supported by legions of heavy armour and thundering
+      artillery, the Imperial Guard fight a never-ending war for the survival of
+      Mankind in an unrelentingly hostile universe.
+    </p>
+    <!-- the html element to store the JSON unit names-->
+    <div id="Unitname"></div>
+    <!-- the modal html elements -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close">x</span>
+        <div id="unitDetails">
+          <div id="name"></div>
+          <div id="cost"></div>
+          <div id="unitDescription"></div>
+          <div id="flavorText"></div>
+          <span class="fa fa-star-o" id="star1"></span>
+          <span class="fa fa-star-o" id="star2"></span>
+          <span class="fa fa-star-o" id="star3"></span>
+          <span class="fa fa-star-o" id="star4"></span>
+          <span class="fa fa-star-o" id="star5"></span>
+          <div id="starValue"></div>
+          <div>Click on the stars to give your rating</div>
+          <br />
+          <!-- a temporary image to make sure that it validates -->
+          <img
+            src="../AssignmentOne/assets/img/intercessorSquad.jpg"
+            alt=""
+            id="imageLink"
+          />
+          <br />
+          <fieldset>
+            <!-- the comments section html elements -->
+            <legend>Comments</legend>
+            <div id="Username">Enter your user name</div>
+            <input type="text" id="userName" />
+            <br />
+            <div id="Comment">Enter Your Comments here</div>
+            <textarea id="message" cols="21" rows="4"></textarea>
+            <br />
+            <button id="commentBtn">Submit your Comment</button>
+            <div id="Comments"></div>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <script src="../AssignmentOne/assets/Js/page2.js"></script>
+  </body>
 </html>

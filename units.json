@@ -4,34 +4,39 @@
         "cost":"$57",
         "unitDescription":"This unit contains 1 Sergeant and 9 Guardsman",
         "flavorText": "Infantry Squads form the backbone of the Astra Militarum, and countless billions of infantry soldiers fight and die for the Imperium. In the face of the enemy the serried ranks of the Imperial Guard are trained to stand firm and respond with a steady aim – when sergeants bellow the rank and file obey; backs stiffen and lasguns level with the foe.",
-        "imageLink": "../Assignment One/assets/img/infantrySquad.jpg"
+        "imageLink": "../AssignmentOne/assets/img/infantrySquad.jpg",
+        "starRating": "3"
     },
     "Officio Prefectus Commissar": {
         "name":"Officio Prefectus Commissar",
         "cost":"$27",
         "unitDescription":"A Lord Commissar is a single unit armed with a bolt pistol and a power sword",
         "flavorText":"Standing proud amid the blood and thunder of the front lines, a battle-scarred Commissar sets an unfaltering example to the men he leads. To the masses of humanity, these men are symbols of Imperial authority whose sole remit is to ensure that all do their duty in the Emperor’s name.",
-        "imageLink": "../Assignment One/assets/img/commisar.jpg"
+        "imageLink": "../AssignmentOne/assets/img/commisar.jpg",
+        "starRating": "1"
     },
     "Leman Russ Battle Tank": {
         "name":"Leman Russ Battle Tank",
         "cost":"$98",
         "unitDescription":"This unit contains 1 Leman Russ Battle Tank equipped with a battle cannon and a heavy boltor",
         "flavorText": "The Leman Russ Battle Tank is the main battle tank of the Imperial Guard armies, a heavily armoured and powerfully armed war machine renowned across the galaxy for its deadliness and durability.",
-        "imageLink": "../Assignment One/assets/img/lemanRuss.jpg"
+        "imageLink": "../AssignmentOne/assets/img/lemanRuss.jpg",
+        "starRating": "4"
     },
     "Baneblade": {
         "name":"Baneblade",
         "cost":"$195",
         "unitDescription":"A Baneblade is a single model equipped with an autocannon, a Baneblade cannon, a demolisher cannon, a twin heavy bolter and adamantium tracks",
         "flavorText":"The Baneblade is the most common variant of super-heavy tank. Its primary weapon – the fearsome baneblade cannon – is capable of delivering apocalyptic bombardments at a terrifying range.",
-        "imageLink":"../Assignment One/assets/img/Baneblade.jpg"
+        "imageLink":"../AssignmentOne/assets/img/Baneblade.jpg",
+        "starRating": "5"
     },
     "Valkyrie": {
         "name":"Valkyrie",
         "cost":"$129",
         "unitDescription":"This unit contains one Valkyrie equipped with a multi-laser and hellstrike missiles",
         "flavorText":"The Valkyrie Assault Carrier is a twin-engine attack craft used for aerial insertions and drop missions. Screaming across a battlefield, a Valkyrie aircraft deploys its cargo into the fray, providing a deadly torrent of covering fire as the troopers within disembark"
-        ,"imageLink": "../Assignment One/assets/img/Valkyrie.jpg"
+        ,"imageLink": "../AssignmentOne/assets/img/Valkyrie.jpg",
+        "starRating": "2"
     }
 }
