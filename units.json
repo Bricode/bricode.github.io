@@ -1,19 +1,19 @@
 {
-    "Infantry Squad": {
+    "InfantrySquad": {
         "name":"Infantry Squad",
         "cost":"$57",
         "unitDescription":"This unit contains 1 Sergeant and 9 Guardsman",
         "flavorText": "Infantry Squads form the backbone of the Astra Militarum, and countless billions of infantry soldiers fight and die for the Imperium. In the face of the enemy the serried ranks of the Imperial Guard are trained to stand firm and respond with a steady aim – when sergeants bellow the rank and file obey; backs stiffen and lasguns level with the foe.",
         "starRating": "3"
     },
-    "Officio Prefectus Commissar": {
+    "OfficioPrefectusCommissar": {
         "name":"Officio Prefectus Commissar",
         "cost":"$27",
         "unitDescription":"A Lord Commissar is a single unit armed with a bolt pistol and a power sword",
         "flavorText":"Standing proud amid the blood and thunder of the front lines, a battle-scarred Commissar sets an unfaltering example to the men he leads. To the masses of humanity, these men are symbols of Imperial authority whose sole remit is to ensure that all do their duty in the Emperor’s name.",
         "starRating": "1"
     },
-    "Leman Russ Battle Tank": {
+    "LemanRussBattleTank": {
         "name":"Leman Russ Battle Tank",
         "cost":"$98",
         "unitDescription":"This unit contains 1 Leman Russ Battle Tank equipped with a battle cannon and a heavy boltor",
