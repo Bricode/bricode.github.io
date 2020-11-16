@@ -4,15 +4,20 @@
 <p>
     For this sprint I was in charge of implementing the games genre systems as well as searching and displaying games based on their genres
 </br>
-    This sprint I had to learn two different but connected aspects of the project, eloquent and mariadb phpmyadmin.
+    To implement the games genres, I had to learn two different but connected aspects of the project, eloquent and mariadb phpmyadmin.
 
     Mariadb was the server that needed to be connected to. I had only used it for sql and not php which presented some new learning opportunitys 
     Mariadb was needed as I had to be able to see if the genres I had added to the games migration had actually 
     come through to the database. I was told by a team member how to link my local laravel work to the mariadb database,
-    so there wasnt much individual learning needed for this,
+    so there wasnt much individual learning needed for this. While this isn't our final planned database, I still found it interesting to learn about.
 
     Eloquent was a new skill I needed to learn as while I was expierenced at creating tables in sqlite,
-    there were some major differences in.
+    there were some major differences in the syntax used in eloquent.
     <img src="../Assets/imgs/genreEloquentExample.PNG" wdith="200px">
+    I used it to create the migration that made the genre table within the database, this then links to each game as a foreign key.
+
+    -Searching based on genre
+    This was a simple story to work through, as the bulk of the work for it was already finished. Having completed the migration and database setup,
+    all that was needed to do to complete this was to link the genre as a foreign key to the games table and then add it to the html template used to render each game
     
 </p>
